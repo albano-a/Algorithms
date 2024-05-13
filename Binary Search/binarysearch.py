@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def binarySearch(A, T):
     n = len(A)
     L = 0
