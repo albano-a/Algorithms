@@ -1,13 +1,12 @@
 import numpy as np
 
-
 def binarySearch(A, T):
     n = len(A)
     L = 0
     R = n - 1
 
     while L <= R:
-        m = int(np.floor((L + R) / 2))
+        m = int(((L + R) / 2))
         if A[m] < T:
             L = m + 1
         elif A[m] > T:
