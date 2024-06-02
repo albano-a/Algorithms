@@ -1,7 +1,9 @@
 # Top-down implementation using lists
+import random
 
 
 def merge(left, right):
+    """Merge two sorted lists into one sorted list."""
     result = []
 
     while len(left) != 0 and len(right) != 0:
@@ -24,6 +26,7 @@ def merge(left, right):
 
 
 def merge_sort(array):
+    """Sort an array using the merge sort algorithm."""
     if len(array) <= 1:
         return array
 
@@ -44,4 +47,9 @@ def merge_sort(array):
 
 j = [38, 27, 43, 3, 9, 82, 10]
 
-print(merge_sort(j))
+ARRAY = random.sample(range(1, 1000), 50)
+print(f"Before: {ARRAY}")
+# ARRAY = [2, 5, 6, 4, 8, 3, 1, 9, 7]
+print(f"After: {merge_sort(ARRAY)}")
+
+# print(merge_sort(j))
