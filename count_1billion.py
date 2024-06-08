@@ -10,7 +10,7 @@ def count_numbers(start, end):
 
 # Constants
 TOTAL_COUNT = 1_000_000_000
-NUM_THREADS = 8  # Adjust the number of threads as needed
+NUM_THREADS = 32  # Adjust the number of threads as needed
 
 # Calculate range for each thread
 chunk_size = TOTAL_COUNT // NUM_THREADS
