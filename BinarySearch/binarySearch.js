@@ -15,8 +15,8 @@ let binarySearch = function (A, T) {
   return null;
 };
 
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let target = 4;
-let result = binarySearch(numbers, target)
+let result = binarySearch(numbers, target);
 
-console.log(`Found ${target} in position ${result}`)
+console.log(`Found ${target} in position ${result}`);

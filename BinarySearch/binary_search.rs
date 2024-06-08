@@ -17,7 +17,7 @@ fn binary_search(a: &[i32], t: i32) -> Option<usize> {
 
 fn main() {
     let arr = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19];
-    let target = 7;
+    let target = 15;
 
     match binary_search(&arr, target) {
         Some(index) => println!("Found {} at index {}", target, index),

@@ -95,11 +95,11 @@ def func_u3(t, u1, u2, u3):
     return u2 + exp(-t)
 
 
-t, w1, w2, w3 = runge_kutta_system(
+time, w1, w2, w3 = runge_kutta_system(
     func_u1, func_u2, func_u3, a=0, b=1, h=0.1, u10=1, u20=1, u30=-1
 )
 
-print(t)
+print(time)
 print()
 print(w1)
 print()
