@@ -17,6 +17,7 @@ def binarySearch(A, T):
 
     return "Unsuccessful"
 
+
 LOW = 1
 HIGH = 100
 

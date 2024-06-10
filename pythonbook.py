@@ -22,4 +22,5 @@ def zoo():
 
     print(f"O preço total foi: R$ {preco:.2f}")
 
+
 zoo()
