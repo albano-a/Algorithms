@@ -17,8 +17,8 @@ function binary_search(A, T)
     return nil
 end
 
-local array = {1, 2, 3, 4, 5}
-local target = 3
+local array = {1, 2, 2, 3, 4, 5, 5}
+local target = 1
 
 local result = binary_search(array, target)
 
