@@ -1,4 +1,4 @@
-fn binary_search(a: &[i32], t: i32) -> Option<usize> {
+fn binary_search(a: &[i32], t: i32) -> Option::<usize> {
     let mut l = 0;
     let mut r = a.len() - 1;
 
