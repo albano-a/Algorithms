@@ -1,22 +1,26 @@
-def bitap_search(text: str, pattern: str) -> str:
-    m = len(pattern)
+import numpy as np
+import matplotlib.pyplot as plt
 
-    if m == 0:
-        return text
 
-    # Initialize the bit array R.
-    R = [0] * (m + 1)
-    R[0] = 1
+print("Hello World")
 
-    for i in range(0, len(text)):
-        # Update the bit array
-        for k in range(m, 0, -1):
-            R[k] = R[k - 1] & (text[i] == pattern[k - 1])
+a: int = 3
+b: int = 9
 
-        if R[m]:
-            return i - m + 1
+add = a + b
+sub = a - b
+div = a / b
+mul = a * b
 
-    return -1
+x = np.linspace(1, 100, 1000)
+y = np.sin(x)
+z = np.cos(x)
 
-a = bitap_search("hello world", "world")  # 6
-print(a)
+plt.plot(x,y, '-o', label="Seno(x)")
+plt.xlabel("Valores de x")
+plt.ylabel("Seno de x")
+plt.title("Gráfico do Seno de x")
+plt.show()
+
+plt.plot(x,z)
+
