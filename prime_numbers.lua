@@ -2,9 +2,9 @@ function prime(num)
     if num == 0 then
         return nil
     elseif num % 2 == 0 then
-        return "É par"
+        return "E par"
     else
-        return "É ímpar"
+        return "E ímpar"
     end
 end
 
